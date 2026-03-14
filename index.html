@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>High School Diploma Rates in Washington Census Tracts</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- include google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <!-- include icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <!-- include c3.js to make charts. c3.js is built upon d3.js -->
+    <script src="js/d3.js"></script>
+    <script src="js/c3.min.js"></script>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div id="info">
+        <div id="title">
+            Public School Enrollment - Washington 2022-23
+            <span id="reset"><a href="#">reset</a></span>
+        </div>
+        <div id="count" class="card">
+            <h5 id="desc"> Average % Enrollment in the displaying region</h5>
+            <p id="diploma-avg"></p>
+        </div>
+        <div id="diploma-chart"></div>
+
+        <div id="footer">
+            This map shows the public school enrollement across Washington state, using the data set
+            "Public Schools Characteristics 2022-2023" from NCES' EDGE program, which develops 
+            annually updated point locations. The dashboard updates as the map 
+            is moved around and the bar chart shows the distribution of enrollement. Hovering 
+            individual circles shows the name of the school, the enrollement, and what level the 
+            school is. 
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="legend"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
