@@ -1,1 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', serif;
+}
 
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#info {
+  z-index: 1000;
+  position: absolute;
+  width: 500px;
+  top: 1%;
+  bottom: 1%;
+  left: .5%;
+  padding: 40px 15px 900px 15px;
+  background: #343a40;
+  color: white;
+  overflow-y: scroll;
+}
+
+/* social media icons */
+#info a {
+  color: lightgray;
+}
+
+#info a:hover {
+  color: white;
+  opacity: 0.3;
+}
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* icon links */
+#title span {
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+}
+
+/* card header */
+#desc {
+  text-align: center;
+  color: lightgray;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* stat counter grid — four boxes replacing the single #earthquake-count */
+#stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.stat-box {
+  background: #3d4348;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#diploma-avg {
+  margin: 0;
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+}
+
+/* chart section labels */
+.chart-label {
+  color: lightgray;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+
+#diploma-chart {
+  top: 20px;
+}
+
+/* school level filter buttons */
+#level-buttons {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  padding: 5px 12px;
+  border: 1px solid #555;
+  background: #3d4348;
+  color: #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Titillium Web', serif;
+  font-size: 12px;
+}
+
+.level-btn:hover {
+  background: #555;
+  color: white;
+}
+
+.level-btn.active {
+  background: orange;
+  color: #1a1a1a;
+  border-color: orange;
+  font-weight: bold;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 150%;
+  color: lightgray;
+}
+
+#footer a {
+  color: orange;
+}
+
+/* the layout of the legend panel */
+#legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  background: #343a40;
+  color: white;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 3px;
+  font-family: 'Titillium Web', serif;
+  font-size: 12px;
+}
+
+/* each row in the legend — mirrors .break */
+.legend-row {
+  position: relative;
+  margin: 4px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* basic style for a box */
+.box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/* the label for the box */
+.box-label {
+  font-style: italic;
+}
+
+/* bar chart */
+text {
+  fill: gray;
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.name, .value {
+  background-color: black;
+  color: black;
+}
